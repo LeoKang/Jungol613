@@ -9,7 +9,8 @@ public class Main {
 		sc.close();
 
 		Person p = new Person(name, school, grade);
-		p.print();
+//		p.print();
+		System.out.println(p.getName() + " " + p.getSchool() + " " + p.getGrade());
 	}
 }
 
@@ -21,6 +22,30 @@ class Person {
 	public Person(String name, String school, int grade) {
 		this.name = name;
 		this.school = school;
+		this.grade = grade;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSchool() {
+		return school;
+	}
+
+	public void setSchool(String school) {
+		this.school = school;
+	}
+
+	public int getGrade() {
+		return grade;
+	}
+
+	public void setGrade(int grade) {
 		this.grade = grade;
 	}
 
